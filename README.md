@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/benjaminchew/DeepPotatoVision">
-    <img src="Readme_images/logo.png" alt="Logo">
+    <img src="Readme_Images/logo.png" alt="Logo">
   </a>
   <p align="center">
   Loblaw Digital x Microsoft Machine Vision HackByte 2019
@@ -35,7 +35,7 @@ Deep Potato Vision provides an indicator of the level of freshness of potatoes u
 
 <p align="center">
   <a>
-    <img src="Readme_images/pipeline.png" alt="Pipeline" width="800">
+    <img src="Readme_Images/pipeline.png" alt="Pipeline" width="800">
   </a>
 </p>
 
@@ -55,18 +55,18 @@ https://www.dropbox.com/s/5qtv5ria8ssfx66/model.pb?dl=0
 
 <p align="center">
   <a>
-    <img src="Readme_images/potatoes.png" alt="Potato detection" width="600">
+    <img src="Readme_Images/potatoes.png" alt="Potato detection" width="600">
   </a>
 </p>
 <p align="center">
   <a>
-    <img src="Readme_images/apples.png" alt="Apple detection" width="600">
+    <img src="Readme_Images/apples.png" alt="Apple detection" width="600">
   </a>
 </p>
 
 <p align="center">
   <a>
-    <img src="Readme_images/lemons.png" alt="Lemon detection" width="600">
+    <img src="Readme_Images/lemons.png" alt="Lemon detection" width="600">
   </a>
 </p>
 
@@ -84,7 +84,7 @@ A webapp provides an evaluation of the level of freshness of the batch of potato
 An example of the results page provided by the webapp is shown below.
 <p align="center">
   <a>
-    <img src="Readme_images/DPV.png" alt="webapp" width="400">
+    <img src="Readme_Images/DPV.png" alt="webapp" width="400">
   </a>
 </p>
 
