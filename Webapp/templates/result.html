@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Index</title>
+    <title>Results</title>
 </head>
 <body>
   <center>
@@ -9,14 +9,14 @@
   <br>
   <h1>Your Image</h1>
 
-  <img src="{{url_for('static', filename= user_image)}}" alt="User Image"/>
+  <img src="{{url_for('send_image', filename= user_image)}}" alt="User Image"/>
  
   <h1>Result</h1>
-
+    <p style="font-size:14px ; text-align:center">
+   <h4> {{ quantity }} </h4><br>
   <h2>Freshness Level %</h2>
-  <h2>Dynamic Price $ CAD</h2>
-
-
+  <p style="font-size:14px ; text-align:center">
+    <h4>{{ quality }}</h4><br>
 
   </center>
   
