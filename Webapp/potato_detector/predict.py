@@ -19,7 +19,7 @@ class TFObjectDetection(ObjectDetection):
     def predict(self, preprocessed_image):
         inputs = np.array(preprocessed_image, dtype=np.float)[:,:,(2,1,0)] # RGB -> BGR
 
-        with tf.Session(graph=self.graph) as sess:
+        with tf.compat.v1.Session(graph=self.graph) as sess:
             output_tensor = sess.graph.get_tensor_by_name('model_outputs:0')
             outputs = sess.run(output_tensor, {'Placeholder:0': inputs[np.newaxis,...]})
             return outputs[0]
@@ -27,8 +27,8 @@ class TFObjectDetection(ObjectDetection):
 
 def hb_detector(image_filename):
     # Load a TensorFlow model
-    graph_def = tf.GraphDef()
-    with tf.gfile.FastGFile(MODEL_FILENAME, 'rb') as f:
+    graph_def = tf.compat.v1.GraphDef()
+    with tf.io.gfile.GFile(MODEL_FILENAME, 'rb') as f:
         graph_def.ParseFromString(f.read())
 
     # Load labels
